@@ -1,0 +1,17 @@
+{
+  "name": "saucedemo-qa-automation",
+  "version": "1.0.0",
+  "description": "Playwright (JavaScript) end-to-end test automation for the SauceDemo e-commerce demo application.",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:regression": "playwright test --grep @regression",
+    "report": "playwright show-report"
+  },
+  "keywords": ["playwright", "qa", "automation", "e2e", "page-object-model"],
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.48.0"
+  }
+}
