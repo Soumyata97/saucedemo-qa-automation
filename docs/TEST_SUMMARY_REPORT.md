@@ -14,13 +14,17 @@ See `TEST_PLAN.md`.
 | Executed | 27 |
 | Passed | 27 |
 | Failed | 0 |
-| Defects found | No defects found in this execution |
+| Defects found | 5 |
 
 ## 4. Defect summary
-No defects found in this execution.
+- BUG-001: Add to cart mismatch for problem_user
+- BUG-002: Remove mismatch on the inventory page
+- BUG-003: Sort order mismatch for problem_user
+- BUG-004: Product detail mismatch for problem_user
+- BUG-005: Finish button missing on checkout overview
 
 ## 5. Observations and risks
-No defects were identified in the executed suite. The automated validation covered login, inventory, cart, checkout, and end-to-end flows against the public SauceDemo site. The test run required reducing Playwright worker concurrency to avoid browser memory exhaustion in this environment.
+The 27 automated Playwright tests on standard_user passed successfully. The five defects listed above were found during exploratory testing using problem_user / secret_sauce and were not present in the standard_user automated suite. This suggests a user-specific defect pattern rather than a regression in the standard automated flows.
 
 ## 6. Conclusion and recommendation
-The exit criteria in `TEST_PLAN.md` were met for this execution.
+The exit criteria in `TEST_PLAN.md` were met for the standard_user automated suite. Exploratory testing with problem_user identified five real defects that should be reviewed and fixed before release.

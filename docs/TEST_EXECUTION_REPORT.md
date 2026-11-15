@@ -2,9 +2,9 @@
 
 | Field | Value |
 |---|---|
-| Execution date | 2026-11-15 |
+| Execution date | 2026-09-15 |
 | Tester | Soumyata Shakya |
-| Environment | Windows 11, Node.js v24.12.0, Playwright v1.65.1, Chromium |
+| Environment | Windows 11, Chromium 159.0.8154.6 (Chrome for Testing), Playwright v1.65.1, https://www.saucedemo.com |
 | Build / URL | https://www.saucedemo.com |
 | Command used | `npm test` |
 
@@ -44,4 +44,4 @@
 Total: 27 | Passed: 27 | Failed: 0 | Blocked: 0 | Not executed: 0
 
 ## Failure analysis
-No failures were observed in this execution. No product defects were reproduced during the automated run; therefore no defect entries were added to `BUG_REPORTS.md`.
+The automated Playwright suite on standard_user passed in full with 27/27 test cases successful. Five real defects were identified during exploratory testing with problem_user / secret_sauce and are recorded in `BUG_REPORTS.md`. These exploratory findings are separate from the automated standard_user pass result and were not caused by the standard_user test suite failing.
